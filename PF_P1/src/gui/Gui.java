@@ -4,6 +4,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.sql.Connection;
 
 public class Gui {
 
@@ -13,10 +16,24 @@ public class Gui {
     JTabbedPane tabbedPane;
     private JButton dashboardButton;
     private JLabel opcion1, opcion2, opcion3, opcion4;
+    private Connection conexion; // Añadir la conexión
 
     public Gui() {
+        conexion = ConexionDB.getConexion(); // Obtener la conexión antes de inicializar la interfaz gráfica
         initialize();
+        
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                ConexionDB.cerrarConexion();  // Cierra la conexión a la base de datos
+                JOptionPane.showMessageDialog(frame, "La conexión se ha cerrado correctamente.", 
+                        "Cierre de Conexión", JOptionPane.INFORMATION_MESSAGE);  // Mostrar mensaje de cierre
+                System.exit(0);  // Finaliza la aplicación
+            }
+        });
     }
+
+    
 
     private void initialize() {
     	
@@ -159,4 +176,7 @@ public class Gui {
         tabbedPane.addTab(tabTitle, panel);
         tabbedPane.setSelectedIndex(tabbedPane.getTabCount() - 1); // Seleccionar la nueva pestaña
     }
+  
+    
+    
 }

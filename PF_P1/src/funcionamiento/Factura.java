@@ -24,13 +24,11 @@ public class Factura extends Documento implements ManejadorDeFacturacion{
 
 	@Override
 	public String generarDocumento() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public double calcularMontoTotal() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	
@@ -38,19 +36,16 @@ public class Factura extends Documento implements ManejadorDeFacturacion{
 
 	@Override
 	public Factura crearFactura(Cliente cliente, List<Producto> producto) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<Factura> listarFacturas() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public double calcularTotales(Factura factura) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 

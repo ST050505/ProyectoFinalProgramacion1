@@ -22,28 +22,22 @@ public class Producto implements ManejadorDeInventario {
 
 	@Override
 	public void agregarproducto(Producto producto) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void actualizarProducto(Producto producto) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public void eliminarProducto(int idProducto) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Producto consultarProducto(int idProducto) {
-		// TODO Auto-generated method stub
 		return null;
 	}
-	
-	
-	
+
 }

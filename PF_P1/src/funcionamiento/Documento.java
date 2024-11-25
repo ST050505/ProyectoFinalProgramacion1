@@ -1,4 +1,5 @@
 package funcionamiento;
+
 import java.sql.Date;
 
 public abstract class Documento {

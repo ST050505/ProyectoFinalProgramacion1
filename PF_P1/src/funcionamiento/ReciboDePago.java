@@ -27,13 +27,11 @@ public class ReciboDePago extends Documento implements ManejadorDePagos {
 
 	@Override
 	public String generarDocumento() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public double calcularMontoTotal() {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	
@@ -41,19 +39,16 @@ public class ReciboDePago extends Documento implements ManejadorDePagos {
 
 	@Override
 	public ReciboDePago registrarPago(Factura factura, double monto) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public List<ReciboDePago> consultarPagos() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public boolean validarMontoPago(Factura factura, double monto) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

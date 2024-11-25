@@ -1,4 +1,5 @@
 package funcionamiento;
+
 import java.util.List;
 
 public interface ManejadorDePagos {

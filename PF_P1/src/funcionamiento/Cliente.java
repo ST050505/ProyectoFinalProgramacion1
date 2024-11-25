@@ -17,21 +17,17 @@ public class Cliente implements ManejadorDeClientes {
 
 	@Override
 	public void registrarCliente(Cliente cliente) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public Cliente consultarCliente(int idCliente) {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	public void actualizarCliente(Cliente cliente) {
-		// TODO Auto-generated method stub
 		
 	}
-	
-	
+
 }
